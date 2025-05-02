@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "music_player": {
+      "command": "python",
+      "args": [
+        "mcp_server_onlinemusic_player.py"
+      ]
+    }
+  }
+}
