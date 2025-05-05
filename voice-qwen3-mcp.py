@@ -148,7 +148,7 @@ def generate_text(prompt):
     result=""
     index=0
     for response in bot.run(messages=messages):
-        result = sentence = response[0]["content"]
+        result = sentence = response[-1]["content"]
         if sentence and len(sentence)>0 and sentence[-1] in tts_sentence_end and split: # 发现分段标记：句子结束
             sentence=sentence[index:]
             if len(sentence)>500 : #如果这句足够长，后面不再分段朗读了
