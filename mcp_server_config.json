@@ -5,6 +5,19 @@
       "args": [
         "mcp_server_onlinemusic_player.py"
       ]
+    },
+    "time": {
+      "command": "python",
+      "args": ["-m", "mcp_server_time", "--local-timezone", "Asia/Shanghai"]
+    },
+    "fetch": {
+      "command": "python",
+      "args": ["-m", "mcp_server_fetch"]
+    },
+    "amap-maps": {
+      "type": "sse",
+      "url": "https://mcp.api-inference.modelscope.cn/sse/bac5a79db1f442"
     }
+
   }
 }
